@@ -19,7 +19,7 @@ email: pyry.rasinmaki@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Bourbon/Neat/Bitters, Browserify, imagemin, Browsersync, PostCSS etc.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.purevirallinen.fi" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ixkaito
 github_username:  ixkaito
 
@@ -42,6 +42,7 @@ social:
   instagram: "https://www.instagram.com/passimies/"
   snapchat: "/pure"
   youtube: "https://www.youtube.com/channel/UCaqZk84uquVJacCn-yU4Baw"
+  spotify: "https://open.spotify.com/artist/3eqHTL8DdpBmmzgZhsw5N0"
   twitch: "https://www.twitch.tv/purevirallinen"
 
 # Build settings

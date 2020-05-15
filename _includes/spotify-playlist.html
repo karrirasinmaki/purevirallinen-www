@@ -1,0 +1,8 @@
+{% assign src = include.src %}
+{% if src == false %}
+  {% assign src = "https://open.spotify.com/embed/playlist/" | append: include.id %}
+{% endif %}
+{% assign src = src | replace: "spotify.com/playlist/", "spotify.com/embed/playlist/" %}
+{% assign src = src | replace: "spotify.com/album/", "spotify.com/embed/album/" %}
+
+<iframe src="{{ src }}" width="340" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

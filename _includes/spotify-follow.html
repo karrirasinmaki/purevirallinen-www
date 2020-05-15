@@ -1,0 +1,8 @@
+{% assign src = include.src %}
+{% if src == false %}
+  {% assign src = "https://open.spotify.com/artist/" | append: include.id %}
+{% endif %}
+{% assign src = src | replace: "https://open.spotify.com/artist/", "https://open.spotify.com/follow/1/?uri=spotify:artist:" | append: "&size=detail&theme=light" %}
+
+<iframe src="{{ src }}" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+
