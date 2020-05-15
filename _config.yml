@@ -14,14 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Pure"
-email: pyry.rasinmaki@gmail.com
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Bourbon/Neat/Bitters, Browserify, imagemin, Browsersync, PostCSS etc.
+  Pure. Passimies EP ulkona 16.5.2020.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.purevirallinen.fi" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ixkaito
-github_username:  ixkaito
+twitter_username:
+github_username:
 
 date_format: "%d.%m.%Y"
 favicon:
@@ -30,7 +29,8 @@ favicon:
 
 # Profile
 name: "Pure"
-profile_img: "https://scontent.fqlf1-1.fna.fbcdn.net/v/t1.0-9/p960x960/95827663_2600449186910339_1358147278371553280_o.jpg?_nc_cat=109&_nc_sid=85a577&_nc_ohc=7LCFAKDlhKIAX_gKuQm&_nc_ht=scontent.fqlf1-1.fna&_nc_tp=6&oh=f6c6f0f596235229369d05a629cb1bbe&oe=5EE307C5"
+email: pyry.rasinmaki@gmail.com
+profile_img: "/uploads/pure-passimies.jpg"
 profile: |-
   Rap SM 🥇🥈🥉<br/>
   👻 Snapchat: pyrbee<br/>
