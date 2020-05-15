@@ -1,4 +1,6 @@
 ---
+featured: true
+
 layout: post
 title: "Pure"
 description:
@@ -7,3 +9,5 @@ image: "https://scontent.fqlf1-1.fna.fbcdn.net/v/t1.0-9/p960x960/42795998_217288
 image_position: top center
 permalink: /pure/
 ---
+
+Joensuulainen räpin Suomen mestari vuodelta 2016

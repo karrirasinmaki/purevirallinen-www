@@ -1,0 +1,13 @@
+          {% assign article_url = post.url | prepend: site.baseurl %}
+
+          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <article>
+              <a class="preview__link" href="{{ post.cta.url | default:article_url }}" itemprop="url">
+                <span class="preview__date" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</span>
+                <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
+                <p class="preview__excerpt" itemprop="description">{{ post.content | strip_html | truncatewords: 30 }}</p>
+                <span class="preview__more">{{ post.cta.label | default:site.data.language.readmore }}</span>
+              </a>
+            </article>
+          </li>
+

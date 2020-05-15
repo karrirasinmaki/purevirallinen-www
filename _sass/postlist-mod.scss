@@ -2,12 +2,6 @@
   @import 'postlist-mod-lg';
 }
 
-.previews {
-  & > * {
-    &:first-child {
-    }
-    &:last-child {
-      padding: 1em;
-    }
-  }
+.tab__profile {
+  padding: 1em;
 }

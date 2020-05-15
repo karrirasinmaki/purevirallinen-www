@@ -10,7 +10,7 @@ module.exports = {
     webpack:     true,
   },
 
-  assets: './assets',
+  assets: './_site/assets',
 
   browsersync: {
     browsers: [
@@ -59,8 +59,8 @@ module.exports = {
   },
 
   sass: {
-    src:          'css',
-    dest:         '../_site/assets/css',
+    src:          '_sass',
+    dest:         'css',
     outputStyle:  'compressed',
     autoprefixer: {
       browsers: [
