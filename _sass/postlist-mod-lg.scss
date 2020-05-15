@@ -140,25 +140,14 @@ $post-list-width: 32em;
 
   &__link {
     padding: 1em 1em 1em 5em;
+    &:not(:hover) {
+      padding-bottom: 0;
+    }
   }
 
   &__header {
     position: relative;
     font-size: 170%;
-
-    // &::after {
-    //   z-index: -1;
-    //   content: "";
-    //   display: block;
-    //   box-sizing: content-box;
-    //   position: absolute;
-    //   left: -50%;
-    //   top: -1.4em;
-    //   width: 200%;
-    //   height: 100%;
-    //   padding: 1em 4em;
-    //   background-color: $color-alpha--light;
-    // }
   }
 
 }

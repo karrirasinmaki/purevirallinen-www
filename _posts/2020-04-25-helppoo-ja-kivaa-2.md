@@ -2,10 +2,9 @@
 layout: post
 title: "Helppoo ja kivaa 2 nyt ulkona!"
 categories:
-  - Biisit
+  - Musiikki
 description:
-image: "https://i1.ytimg.com/vi/GjGfO4MegK8/maxresdefault.jpg"
-# image-sm: https://picsum.photos/500/300?image=1003
+image: "/uploads/pure-helppoo-ja-kivaa-2.jpg"
 image_position: top center
 cta:
   label: "Kuuntele"

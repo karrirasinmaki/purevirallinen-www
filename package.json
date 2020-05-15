@@ -10,11 +10,13 @@
     "browsersync": "bundle exec gulp browsersync",
     "browsersync-production": "bundle exec gulp browsersync --jekyllEnv='production'",
     "build": "bundle exec gulp build --jekyllEnv='production'",
+    "build:staging": "bundle exec gulp build --jekyllEnv='staging'",
     "eslint": "bundle exec gulp eslint",
     "imagemin": "bundle exec gulp imagemin",
     "production": "bundle exec gulp --jekyllEnv='production'",
     "sass": "bundle exec gulp sass",
-    "watch": "bundle exec gulp watch"
+    "watch": "bundle exec gulp watch",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",

@@ -4,8 +4,7 @@ title: "FEAT.FI: HAASTATTELUSSA PURE"
 categories:
   - Uutiset
 description:
-image: "https://feat.fi/wp-content/uploads/2020/04/P1000792-e1587888596669-759x500.jpg"
-# image-sm: https://picsum.photos/500/300?image=1003
+image: "/uploads/pure-ps.jpg"
 cta:
   label: "Lukasepa tästä"
   url: "https://feat.fi/feat-uutiset/suomenmestari-joensuusta-haastattelussa-pure/"

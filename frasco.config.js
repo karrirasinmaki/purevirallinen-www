@@ -10,7 +10,7 @@ module.exports = {
     webpack:     true,
   },
 
-  assets: './_site/assets',
+  assets: './assets',
 
   browsersync: {
     browsers: [
@@ -40,10 +40,16 @@ module.exports = {
     svgoPlugins: [{removeViewBox: false}],
   },
 
+  uploads: {
+    src:         '../_uploads',
+    dest:        '../uploads',
+  },
+
   jekyll: {
     config: {
       default:     '_config.yml',
       development: '_config_development.yml',
+      staging: '_config_staging.yml',
       production:  '',
     },
     dest:     '_site',

@@ -16,6 +16,9 @@ gulp.task('jekyll-build', function (done) {
   if (argv.jekyllEnv == 'production') {
     process.env.JEKYLL_ENV = 'production';
     jekyllConfig += config.jekyll.config.production ? ',' + config.jekyll.config.production : '';
+  } else if (argv.jekyllEnv == 'staging') {
+    process.env.JEKYLL_ENV = 'staging';
+    jekyllConfig += config.jekyll.config.staging ? ',' + config.jekyll.config.staging : '';
   } else {
     jekyllConfig += config.jekyll.config.development ? ',' + config.jekyll.config.development : '';
   }

@@ -5,7 +5,7 @@ const newer    = require('gulp-newer');
 const plumber  = require('gulp-plumber');
 const pngquant = require('imagemin-pngquant');
 
-gulp.task('imagemin', function () {
+gulp.task('imagemin', ['uploads'], function () {
   return gulp.src(config.assets + '/' + config.imagemin.src + '/**/*')
     .pipe(plumber())
     .pipe(newer(config.assets + '/' + config.imagemin.dest))
@@ -15,4 +15,16 @@ gulp.task('imagemin', function () {
       use:         [pngquant()],
     }))
     .pipe(gulp.dest(config.assets + '/' + config.imagemin.dest));
+});
+
+gulp.task('uploads', function () {
+  return gulp.src(config.assets + '/' + config.uploads.src + '/**/*')
+    .pipe(plumber())
+    .pipe(newer(config.assets + '/' + config.uploads.dest))
+    .pipe(imagemin({
+      progressive: config.imagemin.progressive,
+      svgoPlugins: config.imagemin.svgoPlugins,
+      use:         [pngquant()],
+    }))
+    .pipe(gulp.dest(config.assets + '/' + config.uploads.dest));
 });

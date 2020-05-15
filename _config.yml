@@ -33,10 +33,10 @@ name: "Pure"
 profile_img: "https://scontent.fqlf1-1.fna.fbcdn.net/v/t1.0-9/p960x960/95827663_2600449186910339_1358147278371553280_o.jpg?_nc_cat=109&_nc_sid=85a577&_nc_ohc=7LCFAKDlhKIAX_gKuQm&_nc_ht=scontent.fqlf1-1.fna&_nc_tp=6&oh=f6c6f0f596235229369d05a629cb1bbe&oe=5EE307C5"
 profile: |-
   Rap SM 🥇🥈🥉<br/>
-  👻 Snapchat: pyrbee
-  🎬 Youtube: PureVirallinen
-  🧢 Sponsored by: @same_goal_clothing
-  🎮 Twitch: purevirallinen
+  👻 Snapchat: pyrbee<br/>
+  🎬 Youtube: PureVirallinen<br/>
+  🧢 Sponsored by: @same_goal_clothing</br>
+  🎮 Twitch: purevirallinen</br>
 social:
   facebook: "https://www.facebook.com/purevirallinen/"
   instagram: "https://www.instagram.com/passimies/"
@@ -73,4 +73,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - yarn.lock
+  - tags
   - parent-theme
