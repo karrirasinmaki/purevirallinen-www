@@ -4,7 +4,7 @@ title: "PASSIMIES - MUSAVIDEO ULKONA!"
 categories:
   - Musiikki
 description:
-image: "/uploads/pure-passimies.jpg"
+image: "/uploads/pure-passimies-katse.jpg"
 cta:
   label: "Katso"
   url: "https://youtu.be/B7hU2b8FVoo"

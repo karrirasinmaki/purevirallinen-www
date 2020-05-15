@@ -1,7 +1,7 @@
 {
-  "name": "frasco",
-  "version": "0.8.8",
-  "description": "Jekyll starter project including full setup for gulp, Sass, Autoprefixer, PostCSS, webpack, imagemin, Browsersync etc.",
+  "name": "www.purevirallinen.fi",
+  "version": "1.0.0",
+  "description": "Webpage for Finnish rap artist Pure.",
   "main": "gulpfile.js",
   "scripts": {
     "preinstall": "bundle install --path vendor/bundle",
