@@ -1,0 +1,142 @@
+$post-list-width: 32em;
+
+.component-image-window {
+  width: 100%;
+
+  padding-right: $post-list-width;
+}
+
+.component-post-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: $post-list-width;
+  float: right;
+}
+
+.some-icon {
+  color: $color-alpha--light;
+  padding: 0.4em 0.1em;
+
+  @include border-slide($color-alpha--light, $color-alpha, 3px);
+
+  &:before {
+    transition: transform 0.1s ease-in 0.1s;
+    display: inline-block;
+  }
+  &:hover:before {
+    transition: transform 0.1s ease-in 0s;
+    transform: rotate(3deg) translateY(-3px);
+  }
+
+  &:after {
+    border-width: 0px;
+    transition: border 0.1s ease-in-out, width 0s linear 0.1s;
+  }
+  &:hover:after {
+    border-width: 3px;
+  }
+}
+
+/**
+ * Blog page
+ */
+.previews {
+  & > * {
+    &:first-child {
+      @extend .component-image-window;
+    }
+    &:last-child {
+      @extend .component-post-list;
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .tab ul {
+    overflow: hidden;
+  }
+
+  .tabs {
+    &__item {
+      color: $color-alpha--light;
+    }
+  }
+
+  .footer {
+    &__archive {
+      @include border-slide($color-alpha--light);
+    }
+    &__social {
+      li {
+	margin-right: 0.8em;
+      }
+      a {
+	@extend .some-icon;
+      }
+    }
+  }
+}
+
+/**
+ * Article list item
+ */
+.preview {
+  overflow: hidden;
+  font-size: 68%;
+  margin: 1em 0;
+
+  background-color: transparent !important;
+  clip-path:
+    polygon(
+    0% 0%,     /* top left */
+    100% 0%,   /* top right */
+    100% 100%,  /* bottom right */
+    5% 100%,   /* bottom left */
+    0% 0%      /* bottom left */
+    );
+
+  margin-left: 2em;
+
+  &:hover {
+    background-color: $color-alpha--light !important;
+    margin-left: 0;
+    ~ .preview {
+      transform: translateX(5em);
+    }
+
+    .preview__more {
+      @include button-slide-hover();
+    }
+  }
+
+  &__link {
+    padding: 1em 2em 1em 6em;
+  }
+
+  &__header {
+    position: relative;
+
+    &::after {
+      z-index: -1;
+      content: "";
+      display: block;
+      box-sizing: content-box;
+      position: absolute;
+      left: -50%;
+      top: -1em;
+      width: 200%;
+      height: 100%;
+      padding: 1em 4em;
+      background-color: $color-alpha--light;
+    }
+
+    :not(:hover) > & {
+      ~ * {
+	display: none;
+      }
+    }
+  }
+
+}

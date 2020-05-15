@@ -1,0 +1,76 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "Pure"
+email: pyry.rasinmaki@gmail.com
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Bourbon/Neat/Bitters, Browserify, imagemin, Browsersync, PostCSS etc.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ixkaito
+github_username:  ixkaito
+
+date_format: "%d.%m.%Y"
+favicon:
+  source: /assets/favicon.png
+  path: /assets/img
+
+# Profile
+name: "Pure"
+profile_img: "https://scontent.fqlf1-1.fna.fbcdn.net/v/t1.0-9/p960x960/95827663_2600449186910339_1358147278371553280_o.jpg?_nc_cat=109&_nc_sid=85a577&_nc_ohc=7LCFAKDlhKIAX_gKuQm&_nc_ht=scontent.fqlf1-1.fna&_nc_tp=6&oh=f6c6f0f596235229369d05a629cb1bbe&oe=5EE307C5"
+profile: |-
+  Rap SM 🥇🥈🥉
+  👻 Snapchat: pyrbee
+  🎬 Youtube: PureVirallinen
+  🧢 Sponsored by: @same_goal_clothing
+  🎮 Twitch: purevirallinen
+social:
+  facebook: "https://www.facebook.com/purevirallinen/"
+  instagram: "https://www.instagram.com/passimies/"
+  snapchat: "/pure"
+  youtube: "https://www.youtube.com/channel/UCaqZk84uquVJacCn-yU4Baw"
+  twitch: "https://www.twitch.tv/purevirallinen"
+
+# Build settings
+markdown: kramdown
+theme: trophy-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-target-blank
+  - jekyll-paginate-v2
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - frasco.config.js
+  - Gemfile
+  - Gemfile.lock
+  - gulp_tasks
+  - gulpfile.js
+  - LICENSE
+  - node_modules
+  - npm-debug.log
+  - package.json
+  - package-lock.json
+  - README.md
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - yarn.lock
+  - parent-theme

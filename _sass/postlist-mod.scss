@@ -1,0 +1,13 @@
+@media (min-width: $mq-md) {
+  @import 'postlist-mod-lg';
+}
+
+.previews {
+  & > * {
+    &:first-child {
+    }
+    &:last-child {
+      padding: 1em;
+    }
+  }
+}

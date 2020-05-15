@@ -1,0 +1,42 @@
+---
+layout: default
+title: Arkisto
+description: 
+permalink: /arkisto/
+---
+<section class="archives" itemscope itemtype="http://schema.org/Blog">
+  <a class="nav nav--black" href="{{ site.baseurl }}/">
+    <i class="fa fa-lg fa-arrow-left"></i>
+    <span>{{ site.data.language.goback }}</span>
+  </a>
+  <header class="archives__header">
+    <span>{{ site.data.language.archive }}</span>
+  </header>
+  <div class="section-padding archives__container">
+    {% for post in site.posts %}
+      {% assign article_url = post.url | prepend: site.baseurl %}
+      <article class="card" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <a class="card__link" href="{{ post.cta.url | default:article_url }}" itemprop="url">
+          <div class="card__img">
+            {% if post.image-sm %}
+              <figure class="absolute-bg wow" style="background-image: url('{{ post.image-sm }}');"></figure>
+            {% else %}
+              <figure class="absolute-bg wow" style="background-image: url('{{ post.image }}');"></figure>
+            {% endif %}
+          </div>
+          <div class="card__container">
+            <h2 class="card__header" itemprop="name">{{ post.title }}</h2>
+            <p class="card__count" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: site.date_format }}
+              {% if post.categories.size > 0 %}
+                | {{ post.categories | join: ', ' }}
+              {% endif %}
+            </p>
+            <p class="card__excerpt" itemprop="description">{{ post.content | strip_html | truncatewords: 30 }}</p>
+            <span class="card__more">{{ post.cta.label | default:site.data.language.readmore }}</span>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
