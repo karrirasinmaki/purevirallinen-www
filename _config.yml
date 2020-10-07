@@ -16,7 +16,7 @@
 title: "Pure"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Pure. Passimies EP ulkona 16.5.2020.
+  Pure. Passimies - vieraskiertue käynnissä.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.purevirallinen.fi" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
