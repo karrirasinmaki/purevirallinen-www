@@ -1,1 +1,7 @@
-      <figure class="absolute-bg preview__img" style="background-image: url('{{ post.image }}'); background-position: {{ post.image_position | default:'center center' }};"></figure>
+<figure class="absolute-bg preview__img {{ if post.show_title == false }}hide-title{{ endif }}" 
+              style="
+              background-image: url('{{ post.image }}');
+              background-position: {{ post.image_position | default:'center center' }};
+              background-size: {{ post.image_size | default:'cover' }};
+              background-repeat: {{ post.image_repeat | default:'no-repeat' }};
+              "></figure>
